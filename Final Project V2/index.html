@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="/favicon.ico" type="image/x-icon" rel="icon" />
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="/Users/user/Dropbox/Data Science/Final Project/static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="/Users/user/Dropbox/Data Science/Final Project/static/css/style.css">
+
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+
+
+				<!--
+				<p style="font-size: 10px;">Predicted diagnosis is: <spam style = 'color: #fff;'><b> She is having Cancer</b></spam>
+				--> 
+			
+
+				<form action="/predict" method = 'GET'>
+					<h3>Breast Cancer Detection</h3>
+					<p>Worldwide, breast cancer is the most common type of cancer in women and the second highest in terms of mortality rates, so please entre cell details</p>
+					<label class="form-group">
+						<input type="real" class="form-control" name ="radius_mean" required>
+						<span>Radius Mean</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="real" class="form-control" name ="perimeter_mean" required>
+						<span for="">Perimeter Mean</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="real" class="form-control" name ="area_mean" required>
+						<span for="">Area Mean</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="real" class="form-control" name ="symmetry_mean" required>
+						<span for="">Symmetry Mean</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input ttype="real" class="form-control" name ="compactness_mean" required>
+						<span for="">Compactness Mean</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="real" class="form-control" name ="concave points_mean" required>
+						<span for="">Concave Points Mean</span>
+						<span class="border"></span>
+					</label>
+					<button type = 'submit'> predict
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		
+	</body>
+</html>
